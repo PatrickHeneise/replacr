@@ -2,6 +2,7 @@ Replacr
 =======
 
 This is a very simple plugin to replace text with other text out of a YAML-file.
+You can use it for example in combination with aasm to display images for each state.
 
 Installation
 =======
@@ -11,8 +12,8 @@ Please create replace.yml in your config-directory.
 Usage
 =======
 
-r 'read'
-replace 'read'
+r 'read' or replace 'read'
+with aasm: r object.state
 
 Example for key 'read': <img src="images/read.png" alt="read" />
 
